@@ -18,12 +18,12 @@
 
     <default class="main">
         <geom contype="0" conaffinity="0"/>
-        <tendon rgba="0.95 0.3 0.3 41" width="0.001"/>
+        <tendon rgba="1.0 1.0 1.0 41" width="0.001"/>
         <default class="arm">
             <joint limited="true" damping="1.05" armature="1e-4" stiffness="0"/>
             <geom margin="0.001" rgba="0.8 0.8 0.8 1" contype="0" conaffinity="0"/>
             <site size="0.0025" group="2"/>
-            <tendon rgba="0.95 0.3 0.3 41" width="0.003"/>
+            <tendon rgba="1.0 1.0 1.0 41" width="0.003"/>
             <default class="muscle">
                 <general biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" ctrllimited="true" ctrlrange="0 1" dynprm="0.01 0.04 0 0 0 0 0 0 0 0" dyntype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" gaintype="muscle"/>
             </default>
@@ -42,23 +42,23 @@
         </default>
         <default class="upperarm_muscle">
             <general biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" ctrllimited="true" ctrlrange="0 1" dynprm="0.01 0.04 0 0 0 0 0 0 0 0" dyntype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" gaintype="muscle"/>
-            <tendon rgba="0.95 0.3 0.3 41" width="0.007"/>
+            <tendon rgba="1.0 1.0 1.0 41" width="0.007"/>
         </default>
         <default class="forearm_muscle">
             <muscle ctrllimited="true" ctrlrange="0 1" />
-            <tendon rgba="0.95 0.3 0.3 41" width="0.002"/>
+            <tendon rgba="1.0 1.0 1.0 41" width="0.002"/>
         </default>
         <default class="elbow">
             <joint limited="true" damping="0.75" armature="1e-4" stiffness="0"/>
             <geom margin="0.001" rgba="0.8 0.8 0.8 1" contype="0" conaffinity="0"/>
             <site size="0.0025" group="2"/>
-            <tendon rgba="0.95 0.3 0.3 41" width="0.002"/>
+            <tendon rgba="1.0 1.0 1.0 41" width="0.002"/>
         </default>
         <default class="wrist">
             <joint limited="true" damping=".05" armature="1e-4" stiffness="0"/>
             <geom margin="0.001" rgba="0.8 0.8 0.8 1" contype="0" conaffinity="0"/>
             <site size="0.0025" group="2"/>
-            <tendon rgba="0.95 0.3 0.3 41" width="0.002"/>
+            <tendon rgba="1.0 1.0 1.0 41" width="0.002"/>
         </default>
         <default class="fingers">
             <joint limited="true" damping=".05" armature="1e-4" stiffness="0"/>
@@ -136,7 +136,7 @@
     </contact>
 
     <equality>
-		<!--<joint joint1="sternoclavicular_r2" joint2="shoulder_elv" name="sternoclavicular_r2_con" polycoef="0 -0.242 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2"/>
+		<joint joint1="sternoclavicular_r2" joint2="shoulder_elv" name="sternoclavicular_r2_con" polycoef="0 -0.242 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2"/>
         <joint joint1="sternoclavicular_r3" joint2="shoulder_elv" name="sternoclavicular_r3_con" polycoef="0 0.1025 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2"/>
         <joint joint1="unrotscap_r2" joint2="shoulder_elv" name="unrotscap_r2_con" polycoef="0 0.242 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2"/>
         <joint joint1="unrotscap_r3" joint2="shoulder_elv" name="unrotscap_r3_con" polycoef="0 -0.1025 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2"/>
@@ -146,7 +146,7 @@
         <joint joint1="unrothum_r1" joint2="shoulder_elv" name="unrothum_r1_con" polycoef="0 -0.178 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2"/>
         <joint joint1="unrothum_r2" joint2="shoulder_elv" name="unrothum_r2_con" polycoef="0 0.049 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2"/>
         <joint joint1="unrothum_r3" joint2="shoulder_elv" name="unrothum_r3_con" polycoef="0 -0.396 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2"/>
-        <joint joint1="shoulder1_r2" joint2="elv_angle" name="shoulder1_r2_con" polycoef="0 -1 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2"/>-->
+		<joint joint1="shoulder1_r2" joint2="elv_angle" name="shoulder1_r2_con" polycoef="0 -1 0 0 0" solimp="0.9999 0.9999 0.001 0.5 2"/>
     </equality>
 
     <tendon>
@@ -332,7 +332,7 @@
             <site site="BIClong_BIClong-P6"/>
             <site site="BIClong_BIClong-P7"/>
             <site site="BIClong_BIClong-P8"/>
-            <geom geom="Elbow_BIC_BRD_ellipsoid_BIClong" sidesite="Elbow_BIC_BRD_ellipsoid_BIClong_7_sidesite"/>
+            <!--<geom geom="Elbow_BIC_BRD_ellipsoid_BIClong" sidesite="Elbow_BIC_BRD_ellipsoid_BIClong_7_sidesite"/>-->
             <site site="BIClong_BIClong-P10"/>
             <site site="BIClong_BIClong-P11"/>
         </spatial>
@@ -342,7 +342,7 @@
             <site site="BICshort_BICshort-P3"/>
             <site site="BICshort_BICshort-P4"/>
             <site site="BICshort_BICshort-P5"/>
-            <geom geom="Elbow_BIC_BRD_ellipsoid_BICshort" sidesite="Elbow_BIC_BRD_ellipsoid_BICshort_5_sidesite"/>
+			<!--<geom geom="Elbow_BIC_BRD_ellipsoid_BICshort" sidesite="Elbow_BIC_BRD_ellipsoid_BICshort_5_sidesite"/>-->
             <site site="BICshort_BICshort-P6"/>
             <site site="BICshort_BICshort-P7"/>
         </spatial>
@@ -353,7 +353,7 @@
         </spatial>
         <spatial name="BRD_tendon" class="upperarm_muscle">
             <site site="BRD_BRD-P1"/>
-            <geom geom="ElbowBICBRD_ellipsoid_wrap" sidesite="Elbow_BIC_BRD_ellipsoid_BICshort_5_sidesite"/>
+            <!--<geom geom="ElbowBICBRD_ellipsoid_wrap" sidesite="Elbow_BIC_BRD_ellipsoid_BICshort_5_sidesite"/>-->
             <site site="BRD_BRD-P2"/>
             <site site="BRD_BRD-P3"/>
         </spatial>
@@ -790,6 +790,7 @@
 		<general name="DELT1" tendon="DELT1_tendon" lengthrange="0.123363 0.240922"/>
 		<general name="DELT2" tendon="DELT2_tendon" lengthrange="0.14984 0.207283"/>
 		<general name="DELT3" tendon="DELT3_tendon" lengthrange="0.0701623 0.192737"/>
+		<general name="INFSP" tendon="INFSP_tendon" lengthrange="0.0683206 0.15287"/>
 		<!--
 		<general name="PECM1" tendon="PECM1_tendon" lengthrange="0.11622 0.172236"/>
 		<general name="LAT1" tendon="LAT1_tendon" lengthrange="0.377294 0.45406"/>

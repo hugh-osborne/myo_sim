@@ -41,8 +41,8 @@
 
     <body name="clavicle" pos="0.006325 -0.02547 0.00693" childclass="arm" euler="1.57 -1.57 0">
         <inertial diaginertia="0.001 0.001 0.001" mass="0.156" pos="-0.011096 0.0063723 0.054168" quat="0.906292 0.0334036 0.164622 -0.387838"/>
-        <!--<joint axis="0.0153 0.989299 -0.1451" name="sternoclavicular_r2" pos="0 0 0" range="-0.75 -0.0" user="-2.32583e-06"/>
-        <joint axis="-0.994473 0 -0.104997" name="sternoclavicular_r3" pos="0 0 0" range="0.0 0.318" user="9.85111e-07"/>-->
+        <joint axis="0.0153 0.989299 -0.1451" name="sternoclavicular_r2" pos="0 0 0" range="-0.75 -0.0" user="-2.32583e-06"/>
+        <joint axis="-0.994473 0 -0.104997" name="sternoclavicular_r3" pos="0 0 0" range="0.0 0.318" user="9.85111e-07"/>
         <geom mesh="clavicle_geom_1_clavicle" name="clavicle_geom_1" type="mesh"/>
         <site name="DELT1_DELT1-P4" pos="-0.014 0.01106 0.08021"/>
         <site name="PECM1_PECM1-P3" pos="0.0264476 0.004005 0.057232"/>
@@ -51,13 +51,13 @@
 
         <body name="clavphant" pos="-0.01433 0.02007 0.1355">
             <inertial diaginertia="1 1 1" mass="0.001" pos="0 0 0"/>
-            <!--<joint axis="-0.994473 0 -0.104997" name="unrotscap_r3" pos="0 0 0" range="-0.318 -0.0" user="-9.85111e-07"/>
-            <joint axis="0.0153 0.989299 -0.1451" name="unrotscap_r2" pos="0 0 0" range="0.0 0.75" user="2.32583e-06"/>-->
+            <joint axis="-0.994473 0 -0.104997" name="unrotscap_r3" pos="0 0 0" range="-0.318 -0.0" user="-9.85111e-07"/>
+            <joint axis="0.0153 0.989299 -0.1451" name="unrotscap_r2" pos="0 0 0" range="0.0 0.75" user="2.32583e-06"/>
             <body name="scapula" pos="0 0 0">
                 <inertial diaginertia="0.00199576 0.00103993 0.001" mass="0.70396" pos="-0.054694 -0.035032 -0.043734" quat="0.453021 0.77921 0.0744129 0.426692"/>
-                <!--<joint axis="0.157095 0.947269 -0.279291" name="acromioclavicular_r2" pos="0 0 0" range="-0.152 -0.0" user="-4.70933e-07"/>
+                <joint axis="0.157095 0.947269 -0.279291" name="acromioclavicular_r2" pos="0 0 0" range="-0.152 -0.0" user="-4.70933e-07"/>
                 <joint axis="-0.754084 0.297594 0.585487" name="acromioclavicular_r3" pos="0 0 0" range="0.0 1.228" user="3.80592e-06"/>
-                <joint axis="0.6377 0.1186 0.7611" name="acromioclavicular_r1" pos="0 0 0" range="0.0 0.552" user="1.71073e-06"/>-->
+                <joint axis="0.6377 0.1186 0.7611" name="acromioclavicular_r1" pos="0 0 0" range="0.0 0.552" user="1.71073e-06"/>
                 <geom mesh="scapula_geom_1_scapula" name="scapula_geom_1" type="mesh"/>
                 <geom class="wrap" name="Deltoid2_ellipsoid" pos="-0.0058 -0.0378 0.0096" quat="-0.423842 0.568442 0.433325 -0.556293" size="0.033"/>
                 <geom class="wrap" name="Delt3_torus" pos="-0.0973 -0.0428 -0.037" quat="0.916494 0.246518 0.233162 -0.211903" size="0.04"/>
@@ -104,12 +104,12 @@
                 <site class="marker" name="R.Shoulder_marker" pos="0.0014 -0.00147 0.01369"/>
                 <body name="scapphant" pos="-0.00955 -0.034 0.009">
                     <inertial diaginertia="1 1 1" mass="0.001" pos="0 0 0"/>
-					<!--<joint axis="0.6377 0.1186 0.7611" name="unrothum_r1" pos="0 0 0" range="-0.552 -0.0" user="-1.71073e-06"/>
+					<joint axis="0.6377 0.1186 0.7611" name="unrothum_r1" pos="0 0 0" range="-0.552 -0.0" user="-1.71073e-06"/>
                     <joint axis="-0.754084 0.297594 0.585487" name="unrothum_r3" pos="0 0 0" range="-1.228 -0.0" user="-3.80592e-06"/>
-                    <joint axis="0.157095 0.947269 -0.279291" name="unrothum_r2" pos="0 0 0" range="0.0 0.152" user="4.70933e-07"/>-->
+                    <joint axis="0.157095 0.947269 -0.279291" name="unrothum_r2" pos="0 0 0" range="0.0 0.152" user="4.70933e-07"/>
                     <body name="humphant" pos="0 0 0">
                         <inertial diaginertia="1 1 1" mass="0.001" pos="0 0 0"/>
-                        <!--<joint axis="0.00479995 0.999089 0.0423995" name="elv_angle" pos="0 0 0" range="-1.658 2.269" user="0.251642"/>-->
+                        <joint axis="0.00479995 0.999089 0.0423995" name="elv_angle" pos="0 0 0" range="-1.658 2.269" user="0.251642"/>
                         <body name="humphant1" pos="0 0 0">
                             <inertial diaginertia="1 1 1" mass="0.001" pos="0 0 0"/>
                             <joint axis="-0.998261 0.00229991 0.0588977" name="shoulder_elv" pos="0 0 0" range="0 3.142" user="9.61084e-06"/>
@@ -208,7 +208,7 @@
                                 <site name="coracohum_coracohum-P1" pos="0.02 0.011 -0.003"/>
                                 <site name="LIGhh_s_ellipsoid_coracohum_1_sidesite" pos="0.01817 0.01067 -0.006444"/>
                                 <site name="DELT1_DELT1-P1" pos="0.00896 -0.11883 0.00585"/>
-                                <site name="DELT1_DELT1-P2" pos="0.01623 -0.1033 -0.00412"/>
+                                <site name="DELT1_DELT1-P2" pos="0.01623 -0.1033 0.00412"/>
                                 <site name="DELT1hh_ellipsoid_DELT1_2_sidesite" pos="0.000809535 -0.0383736 -0.00627703"/>
                                 <site name="DELT2_DELT2-P1" pos="0.00461 -0.13611 0.0056"/>
                                 <site name="DELT2_DELT2-P2" pos="0.00623159 -0.0641952 -0.0301843"/>
@@ -332,7 +332,7 @@
                                         <camera name="hand_side_inter" pos="0.5 -0.3 0" euler="1.57 1.57 0"/>
                                         <camera name="hand_side_exter" pos="-0.5 -0.3 0" euler="1.57 -1.57 0"/>
 
-										<!--<joint axis="-0.017161 0.992666 -0.119668" name="pro_sup" pos="0 0 0" range="-1.5708 1.5708" damping="0.5"/>-->
+										<joint axis="-0.017161 0.992666 -0.119668" name="pro_sup" pos="0 0 0" range="-1.5708 1.5708" damping="0.5"/>
                                         <geom class="myohand_coll" size="0.02" fromto="0.015 0 -.005 0.025 -0.24 0.025"/>
                                         <geom class="myohand_coll" size="0.02" fromto="-.01 0 -.010 0.015 -0.24 0.025"/>
                                         <geom mesh="radius" name="radius" type="mesh"/>

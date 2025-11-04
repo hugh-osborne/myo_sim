@@ -332,7 +332,8 @@
             <site site="BIClong_BIClong-P6"/>
             <site site="BIClong_BIClong-P7"/>
             <site site="BIClong_BIClong-P8"/>
-            <geom geom="Elbow_BIC_BRD_ellipsoid_BIClong" sidesite="Elbow_BIC_BRD_ellipsoid_BIClong_7_sidesite"/>
+			<!-- This wrapping isn't behaving as expected at all. It seems to fail to bend the elbow --> 
+			<!--<geom geom="Elbow_BIC_BRD_ellipsoid_BIClong" sidesite="Elbow_BIC_BRD_ellipsoid_BIClong_7_sidesite"/>-->
             <site site="BIClong_BIClong-P10"/>
             <site site="BIClong_BIClong-P11"/>
         </spatial>
