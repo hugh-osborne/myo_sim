@@ -332,7 +332,7 @@
             <site site="BIClong_BIClong-P6"/>
             <site site="BIClong_BIClong-P7"/>
             <site site="BIClong_BIClong-P8"/>
-            <!--<geom geom="Elbow_BIC_BRD_ellipsoid_BIClong" sidesite="Elbow_BIC_BRD_ellipsoid_BIClong_7_sidesite"/>-->
+            <geom geom="Elbow_BIC_BRD_ellipsoid_BIClong" sidesite="Elbow_BIC_BRD_ellipsoid_BIClong_7_sidesite"/>
             <site site="BIClong_BIClong-P10"/>
             <site site="BIClong_BIClong-P11"/>
         </spatial>
@@ -342,7 +342,7 @@
             <site site="BICshort_BICshort-P3"/>
             <site site="BICshort_BICshort-P4"/>
             <site site="BICshort_BICshort-P5"/>
-			<!--<geom geom="Elbow_BIC_BRD_ellipsoid_BICshort" sidesite="Elbow_BIC_BRD_ellipsoid_BICshort_5_sidesite"/>-->
+			<geom geom="Elbow_BIC_BRD_ellipsoid_BICshort" sidesite="Elbow_BIC_BRD_ellipsoid_BICshort_5_sidesite"/>
             <site site="BICshort_BICshort-P6"/>
             <site site="BICshort_BICshort-P7"/>
         </spatial>
@@ -353,7 +353,7 @@
         </spatial>
         <spatial name="BRD_tendon" class="upperarm_muscle">
             <site site="BRD_BRD-P1"/>
-            <!--<geom geom="ElbowBICBRD_ellipsoid_wrap" sidesite="Elbow_BIC_BRD_ellipsoid_BICshort_5_sidesite"/>-->
+            <geom geom="ElbowBICBRD_ellipsoid_wrap" sidesite="Elbow_BIC_BRD_ellipsoid_BICshort_5_sidesite"/>
             <site site="BRD_BRD-P2"/>
             <site site="BRD_BRD-P3"/>
         </spatial>
@@ -765,22 +765,20 @@
     </tendon>
 
     <actuator>
-		<!--
-		<general name="SUPSP" tendon="SUPSP_tendon" biasprm="0.305222 1.50664 496.738 1 0 1.8 10 0.288421 1.4 0" class="upperarm_muscle" gainprm="0.305222 1.50664 496.738 1 0 1.8 10 0.288421 1.4 0" lengthrange="0.0802709 0.142442"/>
-        <general name="INFSP" tendon="INFSP_tendon" biasprm="0.622412 1.44899 2150.71 1 0 1.8 10 0.429583 1.4 0" class="upperarm_muscle" gainprm="0.622412 1.44899 2150.71 1 0 1.8 10 0.429583 1.4 0" lengthrange="0.0683206 0.15287"/>
-        <general name="SUBSC" tendon="SUBSC_tendon" biasprm="0.697966 1.36281 1174.3 1 0 1.8 10 0.653193 1.4 0" class="upperarm_muscle" gainprm="0.697966 1.36281 1174.3 1 0 1.8 10 0.653193 1.4 0" lengthrange="0.0871706 0.138301"/>
-        <general name="TMIN" tendon="TMIN_tendon" biasprm="0.73477 1.3801 539 1 0 1.8 10 1.25396 1.4 0" class="upperarm_muscle" gainprm="0.73477 1.3801 539 1 0 1.8 10 1.25396 1.4 0" lengthrange="0.107634 0.196342"/>
-        <general name="TMAJ" tendon="TMAJ_tendon" biasprm="0.577355 1.30849 288 1 0 1.8 10 0.819968 1.4 0" class="upperarm_muscle" gainprm="0.577355 1.30849 288 1 0 1.8 10 0.819968 1.4 0" lengthrange="0.146328 0.243646"/>
-        <general name="PECM2" tendon="PECM2_tendon" biasprm="0.491843 1.46175 570.669 1 0 1.8 10 0.321921 1.4 0" class="upperarm_muscle" gainprm="0.491843 1.46175 570.669 1 0 1.8 10 0.321921 1.4 0" lengthrange="0.143031 0.26756"/>
-        <general name="PECM3" tendon="PECM3_tendon" biasprm="0.314624 1.43381 418.121 1 0 1.8 10 0.649603 1.4 0" class="upperarm_muscle" gainprm="0.314624 1.43381 418.121 1 0 1.8 10 0.649603 1.4 0" lengthrange="0.167005 0.297832"/>
-        <general name="LAT2" tendon="LAT2_tendon" biasprm="0.964571 1.31615 535.42 1 0 1.8 10 0.546803 1.4 0" class="upperarm_muscle" gainprm="0.964571 1.31615 535.42 1 0 1.8 10 0.546803 1.4 0" lengthrange="0.320374 0.459133"/>
-        <general name="LAT3" tendon="LAT3_tendon" biasprm="0.613008 1.41778 179.495 1 0 1.8 10 0.281095 1.4 0" class="upperarm_muscle" gainprm="0.613008 1.41778 179.495 1 0 1.8 10 0.281095 1.4 0" lengthrange="0.369693 0.493048"/>
-        <general name="CORB" tendon="CORB_tendon" biasprm="0.583243 1.36819 172.994 1 0 1.8 10 0.261906 1.4 0" class="upperarm_muscle" gainprm="0.583243 1.36819 172.994 1 0 1.8 10 0.261906 1.4 0" lengthrange="0.136913 0.381615"/>
-        <general name="TRIlat" tendon="TRIlat_tendon" biasprm="0.53832 1.29451 682.224 1 0 1.8 10 1.16899 1.4 0" class="upperarm_muscle" gainprm="0.53832 1.29451 682.224 1 0 1.8 10 1.16899 1.4 0" lengthrange="0.16661 0.214704"/>
-        <general name="ANC" tendon="ANC_tendon" biasprm="0.1 1.10666 262.904 1 0 1.8 10 0.450635 1.4 0" class="upperarm_muscle" gainprm="0.1 1.10666 262.904 1 0 1.8 10 0.450635 1.4 0" lengthrange="0.0215049 0.047622"/>
-        <general name="SUP" tendon="SUP_tendon" biasprm="0.759864 1.45381 339.132 1 0 1.8 10 0.436943 1.4 0" class="upperarm_muscle" gainprm="0.759864 1.45381 339.132 1 0 1.8 10 0.436943 1.4 0" lengthrange="0.0500531 0.0752479"/>
-        <general name="BRA" tendon="BRA_tendon" biasprm="0.526201 1.21956 1168.76 1 0 1.8 10 0.920725 1.4 0" class="upperarm_muscle" gainprm="0.526201 1.21956 1168.76 1 0 1.8 10 0.920725 1.4 0" lengthrange="0.105976 0.14593"/>
-        -->
+		<general name="SUPSP" tendon="SUPSP_tendon"  lengthrange="0.0802709 0.142442"/>
+        <general name="INFSP" tendon="INFSP_tendon"  lengthrange="0.0683206 0.15287"/>
+        <general name="SUBSC" tendon="SUBSC_tendon" lengthrange="0.0871706 0.138301"/>
+        <general name="TMIN" tendon="TMIN_tendon" lengthrange="0.107634 0.196342"/>
+        <general name="TMAJ" tendon="TMAJ_tendon" lengthrange="0.146328 0.243646"/>
+        <general name="PECM2" tendon="PECM2_tendon"  lengthrange="0.143031 0.26756"/>
+        <general name="PECM3" tendon="PECM3_tendon"  lengthrange="0.167005 0.297832"/>
+        <general name="LAT2" tendon="LAT2_tendon"  lengthrange="0.320374 0.459133"/>
+        <general name="LAT3" tendon="LAT3_tendon" lengthrange="0.369693 0.493048"/>
+        <general name="CORB" tendon="CORB_tendon" lengthrange="0.136913 0.381615"/>
+        <general name="TRIlat" tendon="TRIlat_tendon"  lengthrange="0.16661 0.214704"/>
+        <general name="ANC" tendon="ANC_tendon"  lengthrange="0.0215049 0.047622"/>
+        <general name="SUP" tendon="SUP_tendon"  lengthrange="0.0500531 0.0752479"/>
+        <general name="BRA" tendon="BRA_tendon"  lengthrange="0.105976 0.14593"/>
 		
         <general name="TRIlong" tendon="TRIlong_tendon" lengthrange="0.244705 0.39348"/>
 		<general name="TRImed" tendon="TRImed_tendon" lengthrange="0.154238 0.202332"/>
@@ -790,13 +788,13 @@
 		<general name="DELT1" tendon="DELT1_tendon" lengthrange="0.123363 0.240922"/>
 		<general name="DELT2" tendon="DELT2_tendon" lengthrange="0.14984 0.207283"/>
 		<general name="DELT3" tendon="DELT3_tendon" lengthrange="0.0701623 0.192737"/>
-		<general name="INFSP" tendon="INFSP_tendon" lengthrange="0.0683206 0.15287"/>
-		<!--
+		
+		
 		<general name="PECM1" tendon="PECM1_tendon" lengthrange="0.11622 0.172236"/>
 		<general name="LAT1" tendon="LAT1_tendon" lengthrange="0.377294 0.45406"/>
-		-->
-		<general name="PECM3" tendon="PECM3_tendon" lengthrange="0.167005 0.297832"/>
-		<general name="LAT3" tendon="LAT3_tendon" lengthrange="0.369693 0.493048"/>
+
+		<!--<general name="PECM3" tendon="PECM3_tendon" lengthrange="0.167005 0.297832"/>
+		<general name="LAT3" tendon="LAT3_tendon" lengthrange="0.369693 0.493048"/>-->
 		
         <muscle name="ECRL" force = "337.3" class="forearm_muscle" tendon="ECRL_tendon" lengthrange="0.313191 0.341072"/>
         <muscle name="ECRB" force = "252.2" class="forearm_muscle" tendon="ECRB_tendon" lengthrange="0.26997 0.301495"/>
